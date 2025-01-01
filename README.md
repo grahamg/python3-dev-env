@@ -44,7 +44,7 @@ my_todo_app/
 
 1. **Clone** this repository:
    ```bash
-   git clone https://github.com/yourusername/my_todo_app.git
+   git clone https://github.com/grahamg/my_todo_app.git
    cd my_todo_app
    ```
 
