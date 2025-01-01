@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  flask_app:
+    environment:
+      - FLASK_ENV=development
+    # Maybe you want to mount your entire project folder for dev
+    volumes:
+      - ./flask_app:/usr/src/app
+
+  dev_env:
+    environment:
+      - DEV_MODE=true
+    # Possibly forward different ports or additional dev-only volumes, etc.

@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  flask_app:
+    environment:
+      - FLASK_ENV=production
+    # In production, you might not mount volumes
+    # or you might use secrets, etc.
+    # volumes:
+    #   - /somewhere/on/host:/usr/src/app

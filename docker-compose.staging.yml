@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  flask_app:
+    environment:
+      - FLASK_ENV=staging
+    # Similar to production, but maybe some special keys or environment variables

@@ -1,0 +1,71 @@
+# -----------------------------------------------------------------------------
+# 1) Python: Byte-compiled / optimized / DLL files
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info
+dist/
+build/
+.eggs/
+
+# -----------------------------------------------------------------------------
+# 2) Testing: pytest cache, coverage, etc.
+# -----------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# -----------------------------------------------------------------------------
+# 3) pipenv: Lockfile, virtual env, etc. (Optional)
+# -----------------------------------------------------------------------------
+# Pipfile.lock can be committed if you want to lock exact versions
+# But if you prefer ignoring it:
+# Pipfile.lock
+# If you use a local pipenv .venv folder:
+.venv/
+
+# -----------------------------------------------------------------------------
+# 4) Docker: If you have temporary build outputs or such
+# -----------------------------------------------------------------------------
+docker-compose.override.yml
+.env  # If storing Docker env vars here
+# Ignore Docker-related cache or layers
+**/.dockerignore
+**/.docker/
+
+# -----------------------------------------------------------------------------
+# 5) Node.js: if you have node dependencies
+# -----------------------------------------------------------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# -----------------------------------------------------------------------------
+# 6) OS: macOS, Windows, or Linux system files
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+*.swm
+*.swn
+
+# -----------------------------------------------------------------------------
+# 7) IDE or editor-specific:
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+
+# -----------------------------------------------------------------------------
+# 8) Additional ephemeral / local
+# -----------------------------------------------------------------------------
+.env.local
+.env.*
+*.log
+*.bak
+*.tmp
+~$*
+

@@ -1,0 +1,12 @@
+# Pipfile
+[packages]
+flask = "==2.2.5"
+mysql-connector-python = "==8.0.33"
+pytest = "*"
+invoke = "*"
+
+[dev-packages]
+# If you'd like to differentiate dev packages
+
+[requires]
+python_version = "3.10"

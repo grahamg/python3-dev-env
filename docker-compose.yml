@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  # Flask App
+  flask_app:
+    build:
+      context: ./flask_app
+    container_name: flask_app
+    ports:
+      - "8003:8003"
+    environment:
+      - MYSQL_HOST=mysql_db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=todo_db
+    volumes:
+      - ./flask_app:/usr/src/app
+    depends_on:
+      - mysql_db
+
+  # MySQL
+  mysql_db:
+    image: mysql:8.0
+    container_name: mysql_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=todo_db
+    ports:
+      - "3306:3306"
+
+  # Development environment
+  dev_env:
+    build:
+      context: ./dev_env
+    container_name: dev_env
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    tty: true
+
+  # ngrok
+  ngrok:
+    build:
+      context: ./ngrok
+    container_name: ngrok
+    command: "http flask_app:8003"
+    depends_on:
+      - flask_app
+    ports:
+      - "4040:4040"
+    # Exposing 4040 locally so that you can see the ngrok status dashboard
