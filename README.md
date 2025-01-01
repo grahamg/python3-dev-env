@@ -16,7 +16,7 @@ A container-based Python back-end environment featuring:
 ## Project Structure
 
 ```
-my_todo_app/
+python3-dev-env/
 ├── docker-compose.yml                # Base Docker Compose file
 ├── docker-compose.dev.yml            # Development overrides
 ├── docker-compose.prod.yml           # Production overrides
