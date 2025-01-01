@@ -287,14 +287,10 @@ Feel free to modify, distribute, or adapt as needed.
 
 ---
 
-## Additional Notes & Suggestions
+## TODO
 
-1. **Linting/Formatting**: Tools like **Black**, **flake8**, or **isort** can be installed to keep code consistent.  
-2. **Continuous Integration**: If you use GitHub or GitLab, set up a CI pipeline to run `pytest` on every push.  
-3. **Secrets Management**: For production, do **not** store passwords (like root) in plain text. Consider using Docker secrets, environment variable management, or a vault.  
-4. **Production Hardening**: Instead of the built-in Flask server, consider `gunicorn` or `uwsgi` behind a reverse proxy.  
+1. **Linting/Formatting**: Tools like **Black**, **flake8**, or **isort** should be used to keep code formatting consistent.  
+2. **Continuous Integration**: Set up a CI pipeline to run `pytest` on every git push.  
+3. **Secrets Management**: For production deployments use Docker secrets, environment variable management, or a vault solution.  
+4. **Production Hardening**: Instead of the built-in Flask server, use something like `gunicorn` or `uwsgi` behind a reverse proxy.  
 5. **Scaling**: For heavier usage, adopt container orchestration (Kubernetes, ECS, etc.) or at least scale MySQL with persistent volumes.  
-
----
-
-**Enjoy building and deploying your Python Flask to-do application with a robust, Docker-based dev environment!**
