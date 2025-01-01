@@ -1,4 +1,4 @@
-# Flask To-Do App with MySQL, ngrok, Dev Environment, and More
+# python3-dev-env
 
 A container-based Python back-end environment featuring:
 
@@ -16,7 +16,7 @@ A container-based Python back-end environment featuring:
 ## Project Structure
 
 ```
-my_todo_app/
+python3-dev-env/
 ├── docker-compose.yml                # Base Docker Compose file
 ├── docker-compose.dev.yml            # Development overrides
 ├── docker-compose.prod.yml           # Production overrides
@@ -44,8 +44,8 @@ my_todo_app/
 
 1. **Clone** this repository:
    ```bash
-   git clone https://github.com/yourusername/my_todo_app.git
-   cd my_todo_app
+   git clone https://github.com/grahamg/python3-dev-env.git
+   cd python3-dev-env
    ```
 
 2. **(Optional) Install pipenv** if you want advanced Python dependency management:
