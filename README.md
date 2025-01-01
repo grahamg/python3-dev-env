@@ -44,8 +44,8 @@ my_todo_app/
 
 1. **Clone** this repository:
    ```bash
-   git clone https://github.com/grahamg/my_todo_app.git
-   cd my_todo_app
+   git clone https://github.com/grahamg/python3-dev-env.git
+   cd python3-dev-env
    ```
 
 2. **(Optional) Install pipenv** if you want advanced Python dependency management:
